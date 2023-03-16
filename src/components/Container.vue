@@ -10,6 +10,7 @@
 import { Component, Vue } from "vue-property-decorator";
 export enum ContainerType {
   GRID = "grid",
+  FLEX = "flex",
   FLEX_JUSTIFT_BETWEEN = "flex-justify-content",
 }
 
@@ -23,7 +24,7 @@ export default class extends Vue {}
 
 <style scoped lang="scss">
 .container {
-  width: 1300px;
+  width: 1256px;
   margin: 0 auto;
 }
 
@@ -33,6 +34,9 @@ export default class extends Vue {}
   grid-gap: 20px;
 }
 
+.container.flex {
+  display: flex;
+}
 .container.flex-justify-content {
   display: flex;
   justify-content: space-between;

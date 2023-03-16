@@ -19,6 +19,39 @@ const routes: Array<RouteConfig> = [
     component: () =>
       import(/* webpackChunkName: "news" */ "../views/NewsView.vue"),
   },
+  {
+    path: "/about",
+    name: "about",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    children: [
+      {
+        path: "general",
+        component: () => import("../views/AboutChildren/GeneralView.vue"),
+      },
+      {
+        path: "general-definitions",
+        component: () =>
+          import("../views/AboutChildren/GeneralDefinitions.vue"),
+      },
+      {
+        path: "schedule",
+        component: () => import("../views/AboutChildren/Schedule.vue"),
+      },
+      {
+        path: "pay",
+        component: () => import("../views/AboutChildren/Pay.vue"),
+      },
+      {
+        path: "rules-on-place",
+        component: () => import("../views/AboutChildren/RulesOnPlace.vue"),
+      },
+      {
+        path: "other",
+        component: () => import("../views/AboutChildren/Other.vue"),
+      },
+    ],
+  },
 ];
 
 const router = new VueRouter({

@@ -4,7 +4,7 @@
       <ul class="menu__list">
         <router-link tag="li" to="/">Главная</router-link>
         <router-link tag="li" to="/about">О клубе</router-link>
-        <router-link tag="li" to="/news ">Новости</router-link>
+        <router-link tag="li" to="/news">Новости</router-link>
         <router-link tag="li" to="/services">Услуги</router-link>
         <router-link tag="li" to="/tennis">Детский теннис</router-link>
         <router-link tag="li" to="/galery">Галерея</router-link>
