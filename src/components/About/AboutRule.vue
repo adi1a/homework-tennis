@@ -29,4 +29,7 @@ export default class AboutRuleComponent extends Vue {}
 .rule > .rule {
   margin-left: 5px;
 }
+.rule {
+  text-decoration: none;
+}
 </style>

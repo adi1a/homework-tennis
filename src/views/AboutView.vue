@@ -132,7 +132,7 @@ export default class extends Vue {
       link: "/about/general-definitions",
     },
     {
-      title: "Порядок предоставления игрового времени на кортах",
+      title: "Порядок предоставления игрового времени",
       link: "/about/schedule",
     },
     {
